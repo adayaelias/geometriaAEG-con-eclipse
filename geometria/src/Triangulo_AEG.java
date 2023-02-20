@@ -17,13 +17,11 @@ public class Triangulo_AEG extends FiguraGeometrica_AEG {
 	}
 
 	@Override
-	public double area() { //Utiliza la formula de Her—n
+	public double area() { //Utiliza la formula de Herï¿½n
 		double sp;
 		sp = this.semiPerimetro();
 		return Math.sqrt(sp * (sp- lado1) * (sp- lado2) * (sp- lado3));
 	}
 	
-	public double semiPerimetro() {
-		return this.perimetro() / 2;
-	}
+
 }
